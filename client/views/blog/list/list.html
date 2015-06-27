@@ -1,0 +1,7 @@
+<template name="blogList">
+	<div class="list-group">
+		{{#each posts}}
+		 <a href="/blog/{{slug}}" class="list-group-item">{{title}}</a>
+		{{/each}}
+	</div>
+</template>
