@@ -6,10 +6,10 @@ Posts = new orion.collection('posts', {
 	},
 	tabular: {
 		columns: [
-			{data: 'title', title: 'Title'}
-			, {data: 'slug', title: 'Slug'}
-			, {data: 'createdAt', title: 'Created'}
-			, {data: 'updatedAt', title: 'Updated'}
+			{data: 'title', title: 'Title'},
+			{data: 'slug', title: 'Slug'},
+			{data: 'updatedAt', title: 'Updated'},
+			{tmpl: Meteor.isClient && Template.viewModel}
 		]
 	}
 })
