@@ -2,7 +2,7 @@ Router.configure({
   layoutTemplate: 'main'
 });
 
-Router.route('/blog', {
+Router.route('/posts', {
 	name: 'blogList',
 	template: 'blogList',
 	data: function() {
@@ -10,7 +10,7 @@ Router.route('/blog', {
 	}
 });
 
-Router.route('/blog/:slug', {
+Router.route('/posts/:slug', {
 	name: 'blogSingle',
 	data: function() {
 		return Posts.findOne({slug: this.params.slug})
