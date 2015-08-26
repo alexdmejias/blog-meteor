@@ -5,11 +5,14 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+iron:router
 orionjs:core
-twbs:bootstrap
-orionjs:bootstrap
-fortawesome:fontawesome
-zimme:active-route
+aldeed:tabular
 orionjs:summernote
+twbs:bootstrap
+fortawesome:fontawesome
+orionjs:bootstrap
+zimme:iron-router-active
+constellation:console
+constellation:subscriptions
+constellation:session
