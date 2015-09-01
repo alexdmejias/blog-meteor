@@ -1,6 +1,14 @@
 <template name="blogSingle">
-	<div class="page-header">
-	  <h1>{{title}}</h1>
-	</div>
+  {{#with post}}
+  	<div class="page-header">
+  	  <h1>{{title}}</h1>
+  	</div>
 	{{{content}}}
+  {{/with}}
+
+  <div class="container">
+    {{#if currentUser}}
+      <a href="/admin/posts/{{this._id}}" target="_blank">edit this post</a>
+    {{/if}}
+  </div>
 </template>

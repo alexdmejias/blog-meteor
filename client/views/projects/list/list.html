@@ -1,0 +1,7 @@
+<template name="projectList">
+  <div class="list-group">
+    {{#each projects}}
+       <a href="/projects/{{slug}}" class="list-group-item">{{title}}</a>
+    {{/each}}
+  </div>
+</template>

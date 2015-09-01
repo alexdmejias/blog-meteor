@@ -1,0 +1,14 @@
+<template name="projectSingle">
+  {{#with project}}
+    <div class="page-header">
+      <h1>{{title}}</h1>
+    </div>
+    {{{content}}}
+  {{/with}}
+
+  <div class="container">
+    {{#if currentUser}}
+      <a href="/admin/projects/{{this._id}}" target="_blank">edit this post</a>
+    {{/if}}
+  </div>
+</template>

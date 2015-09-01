@@ -22,7 +22,7 @@ Projects = new orion.collection('projects', {
   },
   tabular: {
     columns: [
-      {data: 'name', title: 'Name'},
+      {data: 'title', title: 'Title'},
       {data: 'slug', title: 'Slug'},
       {data: 'updatedAt', title: 'Updated'},
       {tmpl: Meteor.isClient && Template.viewModel}

@@ -1,14 +1,17 @@
 Posts.attachSchema(new SimpleSchema({
   title: {
     type: String
-  }
-  , slug: {
+  },
+  slug: {
+    type: String,
+    label: 'this will be the url of the blog post'
+  },
+  published: {
     type: String
-    , label: 'this will be the url of the blog post'
-  }
-  , content: orion.attribute('summernote', {
+  },
+  content: orion.attribute('summernote', {
       label: 'Body'
     }
-  )
-  , updatedAt: orion.attribute('updatedAt')
+  ),
+  updatedAt: orion.attribute('updatedAt')
 }));
