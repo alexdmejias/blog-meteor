@@ -12,6 +12,9 @@ Projects.attachSchema(new SimpleSchema({
   link: {
     type: String
   },
+  description: {
+    type: String
+  },
   content: orion.attribute('summernote', {
       label: 'Body'
     }

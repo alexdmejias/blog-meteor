@@ -1,9 +1,28 @@
 <template name="projectSingle">
   {{#with project}}
-    <div class="page-header">
-      <h1>{{title}}</h1>
-    </div>
-    {{{content}}}
+    <section class="content wrap-narrow clearfix">
+      <h2 class="title">
+        {{title}}
+        <span>
+          <a class="button fz-half" target="_blank" href="http://labs.alexdmejias.com/cdnatives/">Visit Project</a>
+        </span>
+        <span>
+          <a class="button fz-half" target="_blank" href="https://github.com/amejias101/cdnatives">Github</a>
+        </span>
+      </h2>
+      
+      <article>
+        <p></p><figure><span data-picture="" data-alt=""><span data-src="/assets/images/content/sized/cdnatives/overview-small.jpg"></span><span data-src="/assets/images/content/sized/cdnatives/overview-medium.jpg" data-media="(min-width: 400px)"></span><span data-src="/assets/images/content/sized/cdnatives/overview-large.jpg" data-media="(min-width: 800px)"></span><span data-src="/assets/images/content/sized/cdnatives/overview-xlarge.jpg" data-media="(min-width: 1200px)"><img alt="" src="/assets/images/content/sized/cdnatives/overview-xlarge.jpg"></span></span></figure><p></p>
+        <p>Born as an alternative to having to google "jquery google CDN" every time I wanted to start a prototype, a desire to start an angular side project and not knowing about <a href="http://cdnjs.com/">cdnjs.com</a>, I created CDNatives.</p>
+        <p>The project allows people to quickly get the url to a CDN hosted version of the library they need. Through a very simple set of controls, the user can toggle between development and production ready versions, and whether they would like to include 'script' tags. After clicking the corresponding button, all the user has to do is press cmd + c (ctrl + c in windows) to add the CDNs url to their clipboard.</p>
+        <p>The application uses a simple JSON file to get all of its data if a user ever wants to add another url or library all they have to do is submit a pull request.</p>
+      </article>
+
+      <nav>
+        <a class="button italic" href="http://192.168.33.10/projects/side-projects/pocket-stats">Next: Pocket Stats »</a>
+      </nav>
+
+    </section>
   {{/with}}
 
   <div class="container">

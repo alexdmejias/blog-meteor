@@ -34,6 +34,7 @@ email@1.0.6
 fastclick@1.0.3
 fortawesome:fontawesome@4.4.0
 fourseven:scss@3.2.0
+gabrielengel:konecty-magnific-popup@0.9.9
 geojson-utils@1.0.3
 grigio:babel@0.1.7
 gwendall:body-events@0.1.6
@@ -71,6 +72,7 @@ momentjs:moment@2.10.6
 mongo@1.1.0
 mousetrap:mousetrap@1.4.6_1
 nicolaslopezj:options@1.0.1
+nicolaslopezj:orion-admin-only-bootstrap@1.0.0
 nicolaslopezj:reactive-templates@1.2.1
 nicolaslopezj:roles@1.2.0
 nicolaslopezj:router-layer@0.0.10
